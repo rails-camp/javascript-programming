@@ -1,4 +1,4 @@
-let str = 'The quick brown fox jumped over the lazy dog';
+var str = 'The quick brown fox jumped over the lazy dog';
 
 str.length(); // VM2349:1 Uncaught TypeError: str.length is not a function
 
