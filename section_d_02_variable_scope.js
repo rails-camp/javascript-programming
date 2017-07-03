@@ -1,4 +1,4 @@
-userObj = {
+var userObj = {
   email: 'sample@example.com',
   fullName: 'Kristine Hudgens'
 }
