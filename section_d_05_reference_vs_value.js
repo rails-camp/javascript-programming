@@ -1,18 +1,33 @@
 var someUser = {
-  name: 'Jordan'
+    name: 'Jordan'
 }
 
-function nameFormatter(user) {
-  return user.name = 'Oops';
+function nameFormatter (user) {
+    return user.name = 'Oops';
 }
 
-nameFormatter(someUser);
-console.log(someUser.name);
+nameFormatter(someUser); // "Oops"
 
-function nameFormatter(user) {
-  return user.name = 'Oops';
+someUser; // Object {name: "Oops"}
+
+var someName = 'Tiffany';
+
+function someOtherNameFormatter(name) {
+    return name = 'Oops';
 }
 
-var varName = 'Jordan';
-nameFormatter(varName);
-console.log(varName);
+someOtherNameFormatter(someName); // "Oops"
+
+someName; // "Tiffany"
+
+function nameFormatter (userName) {
+    return userName = 'Oops';
+}
+
+someUser.name; // "Oops"
+
+someUser.name = 'Kristine';
+
+nameFormatter(someUser.name); // "Oops"
+
+someUser.name; // "Kristine"
