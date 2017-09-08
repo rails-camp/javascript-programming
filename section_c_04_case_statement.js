@@ -11,5 +11,5 @@ switch (typeof dataPoint) {
     console.log("It's a boolean");
     break;
   default:
-    console.log('No matches');
+    console.log("No matches");
 }
